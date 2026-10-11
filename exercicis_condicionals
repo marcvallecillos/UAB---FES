@@ -1,0 +1,27 @@
+#exercici 1
+
+num1 = int(input("Introdueix un número: ")) #Declaració de variables
+num2 = int(input("Introdueix un altre número: "))
+
+if num1 > num2: #Creació del condicional per comparar els dos numeros
+    print(f"El numero {num1} es major que {num2}")
+else:
+    print(f"El numero {num2} es major que {num1}")
+
+
+#exercici 2 
+num1 = int(input("Introdueix un número: ")) #Declaració de variables
+num2 = int(input("Introdueix un altre número: "))
+operant = input("Introdueix un operant: ")
+
+
+if operant == "+":
+    print(f"El resultat es: {num1 + num2}")
+elif operant == "-":
+    print(f"El resultat es: {num1 - num2}")
+elif  operant == "/":
+    print(f"El resultat es: {num1 / num2}")
+elif operant == "*":
+    print(f"El resultat es: {num1 * num2}")
+else:
+    print("Error")
