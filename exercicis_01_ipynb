@@ -1,0 +1,57 @@
+#exercici 1
+
+num1 = int(input("Introdueix un número: ")) #Declaració de variables
+num2 = int(input("Introdueix un altre número: "))
+
+if num1 > num2: #Creació del condicional per comparar els dos numeros
+    print(f"El numero {num1} es major que {num2}")
+else:
+    print(f"El numero {num2} es major que {num1}")
+
+
+#exercici 2 
+num1 = int(input("Introdueix un número: ")) #Declaració de variables
+num2 = int(input("Introdueix un altre número: "))
+operant = input("Introdueix un operant: ")
+
+
+if operant == "+":
+    print(f"El resultat es: {num1 + num2}")
+elif operant == "-":
+    print(f"El resultat es: {num1 - num2}")
+elif  operant == "/":  #Solució per quan volem dividir entre zero: crear un condicional dins del condicional original que detecti si tenim un 0 al divisor.
+    if num2 == 0:
+        print("La divisió per zero es indefinida")
+    else:
+        print(f"El resultat es: {num1 / num2}")
+elif operant == "*":
+    print(f"El resultat es: {num1 * num2}")
+else: 
+    print("Error")
+
+#Exercici 3: Any de trespas
+#determina si un any és de traspàs. És divisible per 4, excepte si és divisible per 100 però no per 400.
+
+any = int(input("Introdueix un any: ")) 
+
+if any % 4 == 0 and (any % 100 != 0 or any % 400 == 0):
+    print("Es any de trespas") 
+else:
+    print("No es de trespas")
+
+#Exercici 4: 
+# Classificar edats: classifica l'edat en nadó (0–2), infant (3–12), adolescent (13–17), adult (18–64) o persona gran (65 o més).
+
+edat = int(input("Introdueix la teva edat: "))
+if 0 <= edat <= 2:
+    print("L'individu es un nadó")
+elif 3 <= edat <= 12:
+     print("L'individu es un infant ")
+elif 13 <= edat <= 17:
+     print("L'individu es un adolescent ")
+elif 18 <= edat <= 64:
+     print("L'individu es un adult ")
+elif edat >= 65:
+     print("L'individu es una persona gran")
+else:
+    print("Introdueix una edad valida")
